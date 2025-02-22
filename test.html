@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+
+
+$(document).ready(   function() {
+
+$("#button3").click(function() {
+
+var  password1 = $("#password1").val();
+var password2= $("#password2").val();
+
+if(password1!="" && password2 !="")
+{
+
+if(password1=password2)
+
+{
+alert("login sucess!!");
+}
+else{
+
+    alert("passwiord missmass");
+}
+}
+else{
+alert("please enter password");
+}
+});
+
+
+
+});
+
+</script>
+</head>
+<body>
+<h2>This is a heading</h2>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button id="button1">Click me to hide paragraphs</button>
+
+<button  id="button2">Click me to hide paragraphs</button>
+
+<div class="col-6 mt-10 ">
+
+    <input id="password1"  type="text" placeholder="enter password"  ></input> </br>
+
+</br>
+    <input type="text" placeholder="re enter password" type="text" > </input> </br>
+</br>
+
+<button   id="button3"   type="button"  >login in</button>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
